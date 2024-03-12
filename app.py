@@ -46,7 +46,7 @@ if toggle:
     if name is '' or name.isdigit() or name.replace('.', '', 1).isdigit():
         st.write('Enter a Player\'s name')
     else:
-        if prediction[0] == 1:
+        if prediction == 1:
             st.success(f'{name} will flourish in the NBA')
         else:
             st.error(f'{name} will not flourish in the NBA')
